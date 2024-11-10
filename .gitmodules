@@ -16,3 +16,9 @@
 [submodule "tui-term"]
 	path = tui/term
 	url = git@github.com:RandyMcMillan/tui-term.git
+[submodule "tui/oxker"]
+	path = tui/oxker
+	url = git@github.com:RandyMcMillan/oxker.git
+[submodule "detox"]
+	path = detox
+	url = git@github.com:RandyMcMillan/detox.git

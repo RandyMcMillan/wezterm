@@ -3,6 +3,7 @@ members = [
   "bidi",
   "bidi/generate",
   "deps/cairo", "narrow",
+  "detox",
   "strip-ansi-escapes",
   "sync-color-schemes",
   "wezterm",
@@ -13,6 +14,7 @@ members = [
   "wezterm-open-url",
   "wezterm-ssh",
   "wezterm-uds",
+  "tui/oxker",
   "tui/term",
 ]
 resolver = "2"
