@@ -4,6 +4,8 @@ members = [
   "bidi/generate",
   "deps/cairo", "narrow",
   "detox",
+  "rgit",
+  "rgit/tree-sitter-grammar-repository",
   "strip-ansi-escapes",
   "sync-color-schemes",
   "wezterm",

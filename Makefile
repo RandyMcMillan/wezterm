@@ -1,10 +1,13 @@
 .PHONY: all fmt build check test
 
-all: build build-examples narrow wzsh detox tui/oxker tui/term
+all: build build-examples narrow wzsh detox rgit tui/oxker tui/term
 
 .PHONY:detox
 detox:
 	cargo b -r --manifest-path detox/Cargo.toml
+.PHONY:rgit
+rgit:
+	cargo b -r --manifest-path ./rgit/Cargo.toml
 .PHONY:tui/oxker
 tui/oxker:
 	cargo b -r --manifest-path ./tui/oxker/Cargo.toml

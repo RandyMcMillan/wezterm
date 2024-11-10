@@ -1,24 +1,36 @@
 [submodule "harfbuzz/harfbuzz"]
 	path = deps/harfbuzz/harfbuzz
 	url = https://github.com/harfbuzz/harfbuzz.git
+        ignore = dirty
 [submodule "freetype/libpng"]
 	path = deps/freetype/libpng
 	url = https://github.com/glennrp/libpng.git
+        ignore = dirty
 [submodule "deps/freetype/zlib"]
 	path = deps/freetype/zlib
 	url = https://github.com/madler/zlib.git
+        ignore = dirty
 [submodule "freetype2"]
 	path = deps/freetype/freetype2
 	url = https://github.com/wez/freetype2.git
+        ignore = dirty
 [submodule "wzsh"]
 	path = wzsh
 	url = git@github.com:RandyMcMillan/wzsh.git
+        ignore = dirty
 [submodule "tui-term"]
 	path = tui/term
 	url = git@github.com:RandyMcMillan/tui-term.git
+        ignore = dirty
 [submodule "tui/oxker"]
 	path = tui/oxker
 	url = git@github.com:RandyMcMillan/oxker.git
+        ignore = dirty
 [submodule "detox"]
 	path = detox
 	url = git@github.com:RandyMcMillan/detox.git
+        ignore = dirty
+[submodule "rgit"]
+	path = rgit
+	url = git@github.com:RandyMcMillan/rgit.git
+        ignore = dirty
