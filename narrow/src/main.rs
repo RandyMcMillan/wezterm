@@ -17,9 +17,9 @@ fn main() {
         .unwrap();
 
     let mut args = std::env::args_os().skip(1);
-    print!("{:?} ", args.next().unwrap());
+    //print!("{:?} ", args.next().unwrap());
     let mut args = std::env::args_os().skip(2);
-    print!("{:?} ", args.next().unwrap());
+    //print!("{:?} ", args.next().unwrap());
 
     narrow();
 }

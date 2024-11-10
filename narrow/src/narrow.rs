@@ -21,7 +21,7 @@ pub fn narrow() {
     let mut cmd = CommandBuilder::new(args.next().unwrap());
     cmd.args(args);
 
-    let mut child = pair.slave.spawn_command(cmd).unwrap();
+    let child = pair.slave.spawn_command(cmd).unwrap();
 
     // Release any handles owned by the slave: we don't need it now
     // that we've spawned the child.
