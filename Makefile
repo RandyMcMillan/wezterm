@@ -2,6 +2,9 @@
 
 all: build build-examples narrow wzsh
 
+.PHONY:tui/term
+tui/term:
+	cargo b -r --manifest-path ./tui/term/Cargo.toml
 .PHONY:narrow
 narrow:
 	cargo b -r --manifest-path ./narrow/Cargo.toml

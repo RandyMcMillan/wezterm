@@ -13,3 +13,6 @@
 [submodule "wzsh"]
 	path = wzsh
 	url = git@github.com:RandyMcMillan/wzsh.git
+[submodule "tui-term"]
+	path = tui/term
+	url = git@github.com:RandyMcMillan/tui-term.git
