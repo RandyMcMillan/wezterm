@@ -10,3 +10,6 @@
 [submodule "freetype2"]
 	path = deps/freetype/freetype2
 	url = https://github.com/wez/freetype2.git
+[submodule "wzsh"]
+	path = wzsh
+	url = git@github.com:RandyMcMillan/wzsh.git
