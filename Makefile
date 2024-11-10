@@ -1,10 +1,13 @@
 .PHONY: all fmt build check test
 
-all: build build-examples narrow
+all: build build-examples narrow wzsh
 
 .PHONY:narrow
 narrow:
 	cargo b -r --manifest-path ./narrow/Cargo.toml
+.PHONY:wzsh
+wzsh:
+	cargo b -r --manifest-path ./wzsh/Cargo.toml
 test:
 	cargo nextest run
 
