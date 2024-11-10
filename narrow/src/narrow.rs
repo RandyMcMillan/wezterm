@@ -9,8 +9,8 @@ pub fn narrow() {
 
     let pair = pty_system
         .openpty(PtySize {
-            rows: 24,
-            cols: 80,
+            rows: 0,
+            cols: 0,
             pixel_width: 0,
             pixel_height: 0,
         })

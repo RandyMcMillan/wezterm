@@ -2,9 +2,9 @@
 members = [
   "bidi",
   "bidi/generate",
+  "deps/cairo", "narrow",
   "strip-ansi-escapes",
   "sync-color-schemes",
-  "deps/cairo",
   "wezterm",
   "wezterm-blob-leases",
   "wezterm-dynamic",
@@ -31,4 +31,4 @@ opt-level = 3
 [patch.crates-io]
 # We use our own vendored cairo, which has minimal deps and should just
 # build via cargo.
-cairo-sys-rs = {path="deps/cairo", version="0.18.0"}
+cairo-sys-rs = { path = "deps/cairo", version = "0.18.0" }

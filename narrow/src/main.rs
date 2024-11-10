@@ -1,16 +1,13 @@
 mod narrow;
-use portable_pty::PtySize;
-use portable_pty::NativePtySystem;
-use portable_pty::PtySystem;
 use crate::narrow::narrow;
+use portable_pty::{NativePtySystem, PtySize, PtySystem};
 fn main() {
-
     let pty_system = NativePtySystem::default();
 
     let pair = pty_system
         .openpty(PtySize {
-            rows: 24,
-            cols: 80,
+            rows: 0,
+            cols: 0,
             pixel_width: 0,
             pixel_height: 0,
         })

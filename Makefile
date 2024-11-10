@@ -1,7 +1,10 @@
 .PHONY: all fmt build check test
 
-all: build
+all: build build-examples narrow
 
+.PHONY:narrow
+narrow:
+	cargo b -r --manifest-path ./narrow/Cargo.toml
 test:
 	cargo nextest run
 
@@ -13,6 +16,8 @@ build:
 	cargo build $(BUILD_OPTS) -p wezterm-gui
 	cargo build $(BUILD_OPTS) -p wezterm-mux-server
 	cargo build $(BUILD_OPTS) -p strip-ansi-escapes
+build-examples:
+	cargo build $(BUILD_OPTS) --examples --features widgets
 
 fmt:
 	cargo +nightly fmt
